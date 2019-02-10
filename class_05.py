@@ -63,26 +63,26 @@
 #     print(F'hello{name}')
 # arg_greeting(name= 'chandrakant')
 # arg_greeting
-def arg_return_greetings(name):
-    """
-
-    :param name:
-    :return:
-    """
-    message = F'hello {name}'
-    return message
-
-_name = input('Enter The name:=> ')
-resp = arg_return_greetings(_name)
-print(resp)
+# def arg_return_greetings(name):
+#     """
 #
-def wild_card_args_funtion(*args):
-    """
-
-    :param args:
-    :return:
-    """
-    print(args[0], [1])
+#     :param name:
+#     :return:
+#     """
+#     message = F'hello {name}'
+#     return message
+#
+# _name = input('Enter The name:=> ')
+# resp = arg_return_greetings(_name)
+# print(resp)
+# #
+# def wild_card_args_funtion(*args):
+#     """
+#
+#     :param args:
+#     :return:
+#     """
+#     print(args[0], [1])
 
 def wild_card_kwargs_function(**kwargs):
     """
@@ -91,5 +91,6 @@ def wild_card_kwargs_function(**kwargs):
     :return:
     """
     for key, values in kwargs.items():
-        print(key,":", values)
+        print(key, ":", values)
 user_1={"name":"Chandrakant","Age": 26, "contact no": 9637646900}
+wild_card_kwargs_function(**user_1)
