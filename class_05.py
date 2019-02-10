@@ -84,13 +84,20 @@
 #     """
 #     print(args[0], [1])
 
-def wild_card_kwargs_function(**kwargs):
-    """
-
-    :param kwargs:
-    :return:
-    """
-    for key, values in kwargs.items():
-        print(key, ":", values)
-user_1={"name":"Chandrakant","Age": 26, "contact no": 9637646900}
-wild_card_kwargs_function(**user_1)
+# def wild_card_kwargs_function(**kwargs):
+#     """
+#
+#     :param kwargs:
+#     :return:
+#     """
+#     for key, values in kwargs.items():
+#         print(key, ":", values)
+# user_1={"name":"Chandrakant","Age": 26, "contact no": 9637646900}
+# wild_card_kwargs_function(**user_1)
+# i = 0
+# #list= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# for i in range(1, 11):
+#  print(i*10)
+list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for i in range(0, 10):
+    print(list1[i]*10, end=" ")
