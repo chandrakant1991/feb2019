@@ -1,3 +1,10 @@
+# Assignment
+# 1) Write list comprehension to create 15 random numbers
+# 2) Write list comprehension to create Prime Numbers till user defined number
+# 3) Write Dictionary comprehension with 5 key value pair
+# 4) Convert all pattern assignments in User Defined Function
+
+
 # # List Comprehension
 # odd = list()
 # for i in range(1, 10, 2):
@@ -37,15 +44,52 @@
 # print(ouptput)
 
 # User Defined Function
-def greetings():
+# def greetings():
+#     """
+#      This is Greeting Function
+#     :return:
+#     """
+#     print("Hello word")
+# greetings()
+#
+#
+#
+# def arg_greeting(name):
+#     """
+#       This is greeting function with argument
+#     :param name:user name
+#     :return:
+#     """
+#     print(F'hello{name}')
+# arg_greeting(name= 'chandrakant')
+# arg_greeting
+def arg_return_greetings(name):
     """
-     This is Greeting Function
+
+    :param name:
     :return:
     """
-    print("Hello word")
-greetings()
+    message = F'hello {name}'
+    return message
 
+_name = input('Enter The name:=> ')
+resp = arg_return_greetings(_name)
+print(resp)
+#
+def wild_card_args_funtion(*args):
+    """
 
+    :param args:
+    :return:
+    """
+    print(args[0], [1])
 
+def wild_card_kwargs_function(**kwargs):
+    """
 
-
+    :param kwargs:
+    :return:
+    """
+    for key, values in kwargs.items():
+        print(key,":", values)
+user_1={"name":"Chandrakant","Age": 26, "contact no": 9637646900}
