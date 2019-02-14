@@ -5,7 +5,7 @@
 # 4) Convert all pattern assignments in User Defined Function
 
 
-# # List Comprehension
+# List Comprehension
 # odd = list()
 # for i in range(1, 10, 2):
 #     odd.append(i)
@@ -98,6 +98,28 @@
 # #list= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # for i in range(1, 11):
 #  print(i*10)
-list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-for i in range(0, 10):
-    print(list1[i]*10, end=" ")
+# list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# for i in range(0, 10):
+#     print(list1[i]*10, end=" ")
+
+# list1 = [10, 11, 12, 13, 14, 15, 16, 17, 18]
+# for i in range(len(list1)):
+#     print(list1[i]*10)
+# multi = 1
+# number = input("Enter The Range ==> ")
+# for i in range(len(number)):
+#     for j in range(1, 10):
+#         multi = i*j
+#         j+=1
+#         print(multi)
+number = int(input("Enter The Range ==> "))
+print("The Prime number in given range are: ")
+for num in range(2, number+1):
+    if num > 1:
+      for j in range(2, num):
+        if (num % j) == 0:
+          break
+      else:
+       print(num)
+
+
