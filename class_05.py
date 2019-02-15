@@ -112,14 +112,116 @@
 #         multi = i*j
 #         j+=1
 #         print(multi)
-number = int(input("Enter The Range ==> "))
-print("The Prime number in given range are: ")
-for num in range(2, number+1):
-    if num > 1:
-      for j in range(2, num):
-        if (num % j) == 0:
-          break
-      else:
-       print(num)
+# number = int(input("Enter The Range ==> "))
+# print("The Prime number in given range are: ")
+# for num in range(2, number+1):
+#     if num > 1:
+#       for j in range(2, num):
+#         if (num % j) == 0:
+#           break
+#       else:
+#        print(num,end=" ")
+# Output:-
+# Enter The Range ==> 20
+# The Prime number in given range are:
+# 2 3 5 7 11 13 17 19
 
+# list = []
+# for i in range(0, 15):
+#     if i % 2 == 0:
+#         i-= 1
+#     else:
+#         i+=3
+#     list.append(i)
+# print(list)
+# Output
+# [-1, 4, 1, 6, 3, 8, 5, 10, 7, 12, 9, 14, 11, 16, 13]
+
+
+
+
+
+# labels = ['EName', 'Designation', 'Emp. code', 'Address', 'Mobile no']
+# user1 = ['Parth', 'VP', 20, "Vadgaonsheri", 1234567890]
+# user2 = ['shrikant', 'CEO',  15, 'Vishrantwadi', 22222222222]
+# user3 = ['Chandrakant', 'SystemAdmin', 12, 'SainikNagar,Yerwada', 9637646900]
+# op = list()
+# for user in [user1, user2, user3]:
+#     _user = dict()
+#     for index in range(0, 5):
+#       _user[labels[index]] = user[index]
+#     op.append(_user)
+# print(op)
+
+# Output:-
+# [{'EName': 'Parth', 'Designation': 'VP', 'Emp. code': 20, 'Address': 'Vadgaonsheri', 'Mobile no': 1234567890},
+# {'EName': 'shrikant', 'Designation': 'CEO', 'Emp. code': 15, 'Address': 'Vishrantwadi', 'Mobile no': 22222222222},
+# {'EName': 'Chandrakant', 'Designation': 'SystemAdmin', 'Emp. code': 12, 'Address': 'SainikNagar,Yerwada', 'Mobile no': 9637646900}]
+
+# def numeric():
+#     for i in range(1, 6,):
+#         for j in range(1, i+1):
+#          print(j, end=" ")
+#         print("")
+# numeric()
+
+# Output:-
+# 1
+# 1 2
+# 1 2 3
+# 1 2 3 4
+# 1 2 3 4 5
+
+# def numeric():
+#     for i in range(1, 6,):
+#         for j in range(1, 6):
+#          print(j, end=" ")
+#         print("")
+# numeric()
+# Output:-
+# 1 2 3 4 5
+# 1 2 3 4 5
+# 1 2 3 4 5
+# 1 2 3 4 5
+# 1 2 3 4 5
+# def numeric():
+#     for i in range(1, 6,):
+#         for j in range(1, 6):
+#          print(i, end=" ")
+#         print("")
+# numeric()
+
+# Output:-
+# 1 1 1 1 1
+# 2 2 2 2 2
+# 3 3 3 3 3
+# 4 4 4 4 4
+# 5 5 5 5 5
+
+# def numeric():
+#     for i in range(1, 6,):
+#         for j in range(1, 6):
+#          print('*', end=" ")
+#         print("")
+# numeric()
+
+# Output:-
+# * * * * *
+# * * * * *
+# * * * * *
+# * * * * *
+# * * * * *
+
+# def numeric():
+#     for i in range(1, 6,):
+#         for j in range(1, i+1):
+#          print('1', end=" ")
+#         print("")
+# numeric()
+# Output:-
+# 1
+# 1 1
+# 1 1 1
+# 1 1 1 1
+# 1 1 1 1 1
 
