@@ -224,4 +224,51 @@
 # 1 1 1
 # 1 1 1 1
 # 1 1 1 1 1
+def numeric():
+    for i in range(1, 6):
+        for j in range(1, i+1):
+         print(j%2, end=" ")
+        print("")
+        i-=1
 
+numeric()
+# Output:-
+# 1
+# 1 0
+# 1 0 1
+# 1 0 1 0
+# 1 0 1 0 1
+
+
+# 3) def star():
+#  for i in range(0, 5):
+#
+#      for j in range(1, 6):
+#          print(i%2, end=" ")
+#      print("")
+# star()
+
+#Output:-
+# 0 0 0 0 0
+# 1 1 1 1 1
+# 0 0 0 0 0
+# 1 1 1 1 1
+# 0 0 0 0 0
+
+def star():
+ number = 5
+ for i in range(1, 6):
+
+     for j in range(1, number):
+         print(j%2, end=" ")
+
+     print("")
+     number = number - 1
+star()
+
+# Output:-
+# 1 0 1 0 1
+# 1 0 1 0
+# 1 0 1
+# 1 0
+# 1
