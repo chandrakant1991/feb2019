@@ -67,7 +67,7 @@
 # with open(txt_file_path, 'r+')as txt_file:
 #     txt_file.writable(file_data)
 #
-# with open(txt_file_path, 'r+')as txt_file_read:
+# with open(txt_file_path, 'r+') txt_file_read:
 #     file_data = txt_file_read.readlines()
 #     print(file_data)
 # with open(txt_file_path, 'r+')as txt_file_read:
@@ -75,6 +75,12 @@
 #         print(line.replace("\n", ' '))
 
 
-
+# def generator_parse_file(file_path):
+#     with open(file_path, 'r+') as txt_file:
+#         for line in text_file:
+#             yield line.replace('\n' , '')
+#
+# for i in generator_parse_file(txt_file_path):
+#     print(i)
 
 
